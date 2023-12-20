@@ -54,7 +54,6 @@ turboDepartment.addProject(project2);
 
 
 console.log('Название проекта - Название детали - Стоимость детали - Общий бюджет на проект');
-console.log('-------------------------------------------');
 
 [project1, project2].forEach(project => {
 console.log(`${project.name}`);
@@ -63,12 +62,10 @@ const cost = detail.calculateCost();
 console.log(`${detail.name} - ${cost}`);
 });
 console.log(`Общий бюджет на проект - ${project.calculateBudget()}`);
-console.log('-------------------------------------------');
 });
 
 
 console.log('Название отдела - Бюджет на отдел');
-console.log('-------------------------------------------');
 
 const departments = [techDepartment, turboDepartment];
 departments.forEach(department => {
